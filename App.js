@@ -4,7 +4,7 @@ import { StyleSheet, Text, View,Image } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.bigwhite}>Hello RN </Text>
+      <Text style={styles.bigwhite}>HEY RN </Text>
       <Image  style={{
             resizeMode: "stretch",
             height: 300,
