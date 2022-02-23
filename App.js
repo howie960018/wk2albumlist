@@ -11,7 +11,7 @@ export default function App() {
             width: 200
           }} source={require('./assets/pixiv.jpg')}
       />
-      <Text style={styles.bigwhite}>110819005 數位二甲 曾浩儀 </Text>
+      <Text style={styles.bigwhite}>110819005 數位二甲 曾浩儀 我要學會版本管理</Text>
       <StatusBar style="auto" />
     </View>
   );
