@@ -1,33 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,Image } from 'react-native';
+import React from "react";
+import { StyleSheet, StatusBar, SafeAreaView } from "react-native";
+import Header from "./src/components/Header";
+import AlbumList from "./src/components/AlbumList";
 
-export default function App() {
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.bigwhite}>HEY RN </Text>
-      <Image  style={{
-            resizeMode: "stretch",
-            height: 300,
-            width: 200
-          }} source={require('./assets/pixiv.jpg')}
-      />
-      <Text style={styles.bigwhite}>110819005 數位二甲 曾浩儀 我要學會版本管理</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar />
+      <Header />
+      <AlbumList />
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,    
-    backgroundColor: '#8BEDFE',
-    alignItems: 'center',
-    justifyContent: 'center',
-    
-  },
-  bigwhite: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 25,
+    flex: 1,
   },
 });
+
+export default App;
